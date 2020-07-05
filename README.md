@@ -7,13 +7,11 @@ Supported Characters are : abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0
 
 If you want to add some characters just edit the char variable in the code. Or you guys can develop the program.
 And please always check for update for this tool.
-Installation :
+# Installation :
 
-# git clone https://github.com/Nan0mate/offline-password-generator-in-python
-# cd offline-password-generator-in-python
-# python password_generator.py
-
-Contact me:
+  # git clone https://github.com/Nan0mate/offline-password-generator-in-python
+  # cd offline-password-generator-in-python
+  # python password_generator.py
 
 # Contact me: 
 
