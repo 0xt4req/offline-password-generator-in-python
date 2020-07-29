@@ -1,4 +1,4 @@
-import random,string
+import random,string,pyttsx3, playsound
 
 print("############################################################")
 print("#    Code For       : Offline Password Generator           #")
@@ -11,26 +11,36 @@ print("#    Team Leader    : Noman Prodhan                        #")
 print("############################################################")
 print("\n")
 
+
+def greetings_speak():
+    robot = pyttsx3.init()
+    robot.say("Welcome to Offline Password Generator. I am programmed by Md. Tareq Ahamed Jony. I can generate random strong "
+              "password for you. Just input the length & see the magic! So, are you ready?")
+    robot.runAndWait()
+
+
 def password_generator(num):
     char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.+-*/~`!@#$%^&*()_|/,{}''[]:" # you can add more
-    char_len = len(char) # length of the char variable
-    password = "" # declearing an empty string
+    char_len = len(char)
+    password = ""
     for i in range(0, pass_len):
-        x = random.randint(0, char_len) # to change the password randomly
-        password += string.printable[x] # adding the characters to the password variable as string
+        x = random.randint(0, char_len)
+        password += string.printable[x]
 
     print(password)
     print("Password is save to password.txt file \n")
-    with open("password.txt", mode="w") as pass_file: # creating a new .txt file to store the password 
-        pass_file.write("\nCurrent Generated Password is : ") # writing on the file
-        pass_file.write(password) # saving the password to the file
-        pass_file.write("\n") # printing newline
+    with open("password.txt", mode="w") as pass_file:
+        pass_file.write("\nCurrent Generated Password is : ")
+        pass_file.write(password)
+        pass_file.write("\n")
 
 
-while True: # to run the program as much as user wants
-    try: # exception heandling 
+print("Loading....")
+greetings_speak()
+while True:
+    try:
         pass_len = int(input("Enter Password Length : "))
         password_generator(pass_len)
-    except ValueError: # detecting error
-        print("Invalid Input") # if user gives invalid input
+    except ValueError:
+        print("Invalid Input")
         print("\n")
