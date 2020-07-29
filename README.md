@@ -1,7 +1,12 @@
 # Offline-Password-Generator-in-Python
-# Version 1.0 Language : Python
+# Version 2.0 Language : Python
 
 This is a simple code of offline password generator in Python. 
+
+# Modules Needs to be installed 
+    # random (pip install random)
+    # pyttsx3 (pip install pyttsx3)
+    # string (pip install string)
 
 Hello. I am the Author of this program. I am giving you some information about the usages if this program.
 
@@ -12,7 +17,7 @@ If you want to add some characters just edit the char variable in the code. Or y
 # And please always check for update for this tool.
 
 
-# Installation : 
+# Installation in Linux : 
 
     # git clone https://github.com/Nan0mate/offline-password-generator-in-python
     # cd offline-password-generator-in-python
