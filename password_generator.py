@@ -1,4 +1,4 @@
-import random,string,pyttsx3, playsound
+import random,string,pyttsx3
 
 print("############################################################")
 print("#    Code For       : Offline Password Generator           #")
